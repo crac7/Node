@@ -1,0 +1,38 @@
+doctype 
+html(lang='es')
+  head
+    meta(charset='utf-8')
+    title= title
+    link(rel='stylesheet', type='text/css', href='normalize.css')    
+    link(rel='stylesheet', type='text/css', href='/stylesheets/estilos.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/tablas.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/estiloDieta.css')
+    link(href='http://fonts.googleapis.com/css?family=Nunito:700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Play:700', rel='stylesheet', type='text/css')
+    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/validCampoFranz.js')
+
+
+  body    
+    header
+      figure#logo
+        img(src='/images/n.jpg')
+      h1
+        | Bienvenido a NutrinaYcen     
+
+    block navegador
+    block navegadorNutri 
+    section#contenido
+      article.item
+          block infousuario
+          block content
+   
+
+   
+    footer
+      p
+        strong Todos los derechos reservados
+      p
+        | NUTRINAYCEN 2015

@@ -1,0 +1,81 @@
+
+extends layout
+extends layout_navegador_admin
+
+block content
+        script(src='/javascripts/global.js')
+        // ADD USER
+        h2 Nuevo Usuario
+        #addUser
+            fieldset
+                input#inputUserEmail(type='text', placeholder='Email')
+                input#inputUserNombres(type='text', placeholder='Nombres')
+                input#inputUserApellidos(type='text', placeholder='Apellidos')
+                input#inputUserCelular(type='text', placeholder='Celular')
+                input#inputUserDireccion(type='text', placeholder='Direccion')
+                br
+                input#inputUserPeso(type='text', placeholder='Peso en KG')
+                input#inputUserAltura(type='text', placeholder='Altura en CM')
+                input#inputUserGrasaCorporal(type='text', placeholder='Grasa Corporal %')
+                input#inputUserMasaCorporal(type='text', placeholder='Masa Corporal %')
+                input#inputUserIMC(type='text', placeholder='IMC')
+                br
+                button#btnAddUser Guardar Usuario
+                button#btnlimpiar Limpiar
+                
+                
+
+        // USER INFO
+        #userInfo
+            h2 Infromacion del Usuario
+            p
+
+                strong Nombres:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Apellidos:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Celular:
+                |  <span id='userInfoLocation'></span> 
+                br
+                strong Direccion:
+                |  <span id='userDireccion'></span>
+                br
+                strong Peso:
+                |  <span id='userPeso'></span>
+                br
+                strong Altura:
+                |  <span id='userAltura'></span>
+                br
+                strong Grasa Corporal:
+                |  <span id='userGrasaCorporal'></span>
+                br
+                strong Masa Corporal:
+                |  <span id='userMasaCorporal'></span>
+                br
+                strong IMC:
+                |  <span id='userIMC'></span>         
+        // USER LIST
+        
+        #userList
+            h2 Lista de contactos
+            input.light-table-filter(type='search', data-table='order-table', placeholder='Buscador de Cliente')
+            table.order-table.table  
+                thead
+                  th
+                      strong Email
+                  th
+                      strong Nombre
+                  th
+                      strong Eliminar
+                  th
+                      strong Selecionar 
+                  th
+                      strong Actulizar                                                    
+                  tbody
+
+                               
+               
+      
+

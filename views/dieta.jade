@@ -1,0 +1,177 @@
+
+extends layout
+extends layout_navegador_nutri
+
+block content
+               
+
+        script(src='/javascripts/global_Nutri_diet.js')
+        // USER INFO
+        #Info
+            h2 Infromacion del Usuario
+            p
+
+                
+                | <img src="http://avatar.htcmania.com/avatares/avatar1255844_1.gif ">
+                br
+                strong Nombres:
+                |  <span id='userInfoAge'></span> 
+                br
+                strong Apellidos:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Peso:
+                |  <span id='userPeso'></span>
+                br
+                strong Grasa Corporal:
+                |  <span id='userGrasaCorporal'></span>
+                br
+                strong Masa Corporal:
+                |  <span id='userMasaCorporal'></span>
+                br
+                strong IMC:
+                |  <span id='userIMC'></span>         
+
+        //Bucasdor
+        script(src='/javascripts/global.js')
+        #usernuti
+             .innerb
+               input.light-table-filter(type='search', data-table='order-table', placeholder='Buscador de Cliente')
+               table.order-table.table
+                thead
+                  th
+                      strong Email
+                  th
+                      strong Nombres     
+                  th
+                      strong Apellidos             
+                  tbody
+                        
+      
+
+        // USER LIST
+        
+        #plan
+            h2 PLan nutricional
+            label
+                | Fecha y hora de la cita
+            input(type='datetime', name='fechayhora', size='25')      
+            table  
+                thead
+                  th
+                      p Comidas\Dias
+                  th
+                      strong Lunes
+                  th
+                      strong Martes
+                  th
+                      strong Miercoles
+                  th
+                      strong Jueves 
+                  th
+                      strong Viernes 
+                  th
+                      strong Sabado 
+                  th
+                      strong Domingo                                                    
+                  tr
+
+                  th
+                      strong Desayuno
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')  
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')                        
+
+                  tr
+                  th  
+                      strong Snack
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')   
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')  
+
+                  tr
+                  th  
+                      strong Almuerzo                    
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')                
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')  
+
+                  tr
+                  th  
+                      strong Snack                    
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')    
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')  
+
+                  tr
+                  th  
+                      strong Cena                    
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')                                       
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)') 
+                  td
+                      textarea(value='datos ', onchange='doAdd(this)')  
+                 
+                  table                  
+                  tr
+                  td
+                      button#btnAddUser Guardar Plan
+                  tr
+                  td
+                      button#btnlimpiar Limpiar                              
+               
+      
+

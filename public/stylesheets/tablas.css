@@ -1,0 +1,190 @@
+input[type="text"] {
+	width: 220px;
+	height: 35px;
+	margin-left: 20px;
+	margin-top:10px;
+	padding-left: 10px;
+	font-size: 1.1em;
+	outline: none;
+	border:0px;
+	background-color: #dcdcdc;
+	border-radius: 5px;
+}
+
+#btnAddUser,  #inputUserImagen, #btnNutriUser, #btnCoachUser, #btnlimpiar{
+	margin:20px;
+	margin-bottom: 20px;
+	width:240px;
+	height: 40px;
+	outline: none;
+	border:0px;
+	background-color: #FF7F50;
+	color: white;
+	font-size: 1.2em;
+	border-radius: 5px;
+	-webkit-box-shadow:0px 5px 0px #FF4500;
+
+}
+
+#userList {
+	padding-left:400px;
+	margin:0 0 30px 0;
+}
+	#userList input{
+	color:#383838;
+	width: 12em;
+	font-size: 1em;
+	background: white ;
+	padding-left: 1em ;
+	text-align: center;
+	border-radius: 0.3em;
+	padding: 0.6em;
+	margin:0.6em 0 1em 0; 
+
+	}
+	
+		#userList table {
+			border-collapse:separate;
+			border-spacing:0.06em;
+			background:#CCC;
+		}
+			#userList table th {
+				background:#EEE;
+				font-weight:600;
+				padding:0.6em 1.25em;
+				text-align:center;
+			}
+			#userList table tbody {
+				padding:0.03em; margin:0.03em;
+				border-collapse:collapse;
+				border-spacing:0px;
+			}
+				#userList table td {
+					background:#FFF;
+					padding:0.3em 0.6em;
+					text-align:center;
+				}
+
+#userInfo {
+	padding-left:0.6em;
+	top:12em;
+	width:21.8em;
+	position:absolute;
+	
+}
+	#userInfo p {
+		padding:0.9em;
+		border:0.06em solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+/*nutricionita*/
+#NutriList {
+	padding-left:400px;
+	margin:0 0 30px 0;
+}
+	#NutriList input{
+	color:#383838;
+	width: 12em;
+	font-size: 1em;
+	background: white ;
+	padding-left: 1em ;
+	text-align: center;
+	border-radius: 0.3em;
+	padding: 0.6em;
+	margin:0.6em 0 1em 0; 
+
+	}
+	
+		#NutriList table {
+			border-collapse:separate;
+			border-spacing:0.06em;
+			background:#CCC;
+		}
+			#NutriList table th {
+				background:#EEE;
+				font-weight:600;
+				padding:0.6em 1.25em;
+				text-align:center;
+			}
+			#NutriList table tbody {
+				padding:0.03em; margin:0.03em;
+				border-collapse:collapse;
+				border-spacing:0px;
+			}
+				#NutriList table td {
+					background:#FFF;
+					padding:0.3em 0.6em;
+					text-align:center;
+				}
+
+#NutriInfo {
+	padding-left:0.6em;
+	top:12em;
+	width:21.8em;
+	position:absolute;
+	
+}
+	#NutriInfo p {
+		padding:0.9em;
+		border:0.06em solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+
+
+/*Coach*/
+#ListCoach {
+	padding-left:400px;
+	margin:0 0 30px 0;
+}
+	#ListCoach input{
+	color:#383838;
+	width: 12em;
+	font-size: 1em;
+	background: white ;
+	padding-left: 1em ;
+	text-align: center;
+	border-radius: 0.3em;
+	padding: 0.6em;
+	margin:0.6em 0 1em 0; 
+
+	}
+	
+		#ListCoach table {
+			border-collapse:separate;
+			border-spacing:0.06em;
+			background:#CCC;
+		}
+			#ListCoach table th {
+				background:#EEE;
+				font-weight:600;
+				padding:0.6em 1.25em;
+				text-align:center;
+			}
+			#ListCoach table tbody {
+				padding:0.03em; margin:0.03em;
+				border-collapse:collapse;
+				border-spacing:0px;
+			}
+				#ListCoach table td {
+					background:#FFF;
+					padding:0.3em 0.6em;
+					text-align:center;
+				}
+
+#InfoCoach {
+	padding-left:0.6em;
+	top:14em;
+	width:21.8em;
+	position:absolute;
+	
+}
+	#InfoCoach p {
+		padding:0.9em;
+		border:0.06em solid #CCC;
+		background:rgba(80,120,255,0.05);
+	}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}

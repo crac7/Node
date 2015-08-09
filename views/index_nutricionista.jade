@@ -1,0 +1,56 @@
+extends layout
+extends layout_navegador_admin
+block content
+        script(src='/javascripts/globalNutri.js')
+        // ADD USER
+        h2 Nuevo Nutricionista
+        #addNutri
+            fieldset
+                input#inputUserEmail(type='text', placeholder='Email')
+                input#inputUserNombres(type='text', placeholder='Nombres')
+                input#inputUserApellidos(type='text', placeholder='Apellidos')
+                input#inputUserCelular(type='text', placeholder='Celular')
+                br
+                button#btnNutriUser Guardar Nutricionista
+                button#btnlimpiar Limpiar
+                
+                
+        // /ADD USER
+        // USER LIST
+        
+        #NutriList
+            h2 Lista de Nutricionista
+            input.light-table-filter(type='search', data-table='order-table', placeholder='Buscador de Nutricionista')
+            table.order-table.table  
+                thead
+                  th
+                      strong Email
+                  th
+                      strong Nombre
+                  th
+                      strong Eliminar
+                  th
+                      strong Selecionar 
+                  th
+                      strong Actulizar                                                    
+                  tbody
+        // USER INFO
+        #NutriInfo
+            h2 Infromacion 
+            p
+                strong Email:
+                |  <span id='userInfoName'></span>
+                br
+                strong Nombres:
+                |  <span id='userInfoAge'></span>
+                br
+                strong Apellidos:
+                |  <span id='userInfoGender'></span>
+                br
+                strong Celular:
+                |  <span id='userInfoLocation'></span> 
+                br               
+        
+
+      
+
